@@ -182,9 +182,9 @@ cython_debug/
 .abstra/
 
 # Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
+#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore
 #  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
+#  and can be added to the global gitignore or merged into this file. However, if you prefer,
 #  you could uncomment the following to ignore the entire vscode folder
 # .vscode/
 
@@ -205,3 +205,37 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Data folders (do not upload raw data)
+data/raw/
+data/spotify_features/
+
+# Results (optional, only keep small plots)
+results/reports/
+
+# ============================================
+# Custom project-specific ignores for K-pop Hit Predictor
+# ============================================
+
+# Processed data (optional: you can keep one small sample for reproducibility)
+data/processed/*.csv
+!data/processed/sample_100.csv   # keep only a small example file
+
+# API cache & credentials
+.cache/
+auth.json
+
+# Output figures (optional: keep only key visuals)
+results/figures/*.png
+!results/figures/feature_importance.png
+!results/figures/trend_analysis.png
+
+# Jupyter temporary files
+*.ipynb_checkpoints
+*.nbconvert.ipynb
+
+# Logs and checkpoints
+*.log
+*.tmp
+.DS_Store
+.idea/

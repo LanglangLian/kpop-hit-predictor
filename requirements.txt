@@ -1,0 +1,6 @@
+spotipy
+pandas
+tqdm
+matplotlib
+scikit-learn
+plotly
